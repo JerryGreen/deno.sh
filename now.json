@@ -1,0 +1,17 @@
+{
+  "name": "deno.sh",
+  "version": 2,
+  "alias": ["deno.sh"],
+  "builds": [
+    {
+      "src": "index.ts",
+      "use": "@now/node@canary"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/"
+    }
+  ]
+}
